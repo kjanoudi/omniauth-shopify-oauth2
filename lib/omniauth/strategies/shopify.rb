@@ -63,7 +63,6 @@ module OmniAuth
       end
 
       def request_phase
-        byebug
         fix_https
         super
       end
@@ -78,7 +77,6 @@ module OmniAuth
       def callback_url
         options[:callback_url] || super
       end
-
     end
   end
 end
